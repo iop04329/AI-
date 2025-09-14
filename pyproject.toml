@@ -6,6 +6,9 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "agno>=2.0.4",
+    "beautifulsoup4>=4.13.5",
+    "httpx>=0.28.1",
     "openai>=1.107.2",
     "streamlit>=1.49.1",
+    "yfinance>=0.2.65",
 ]

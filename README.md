@@ -13,4 +13,8 @@
     streamlit run main.py
     ```
 
-3. 
+3. **Knowledge **
+    1. google search api 需到[google console](https://console.cloud.google.com) 設定api key
+    2. google engine 需要到 [cse.google.com](https://programmablesearchengine.google.com) 設定 engine_id
+    3. 上述參考[搜尋引擎教學](https://www.youtube.com/watch?v=Rdt4wDHHHLw)
+    
