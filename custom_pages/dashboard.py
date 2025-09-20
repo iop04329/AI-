@@ -3,7 +3,7 @@ from ai.analyze import analyze_run
 from ai.analyze_model import StockAnalysis
 from tool.finance import get_stock_name
 
-def dashboard_page():
+def dashboardPage():
     # 頁面設定
     st.set_page_config(page_title="AI 市場情緒分析助理", layout="wide")
 
