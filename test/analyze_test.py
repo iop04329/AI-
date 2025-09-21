@@ -10,7 +10,7 @@ def test():
     ticker_id = '00919.TW'
     ticker_name = get_stock_name(ticker_symbol=ticker_id)
     print(f'股票代號:{ticker_id} 股票名稱:{ticker_name}')
-    res:RunOutput = analyze_run(stock_id=ticker_id)
+    res:RunOutput = analyze_run(stock_name='00919')
     print(res.content)
     analyze_result:StockAnalysis = StockAnalysis.model_validate_json(res.content)
     # print(res.messages)

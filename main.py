@@ -1,5 +1,5 @@
 import streamlit as st
-from custom_pages import dashboard, home, setting
+from custom_pages import analyze, home, setting
 import os
 from dotenv import load_dotenv
 
@@ -7,7 +7,6 @@ from custom_pages.router_enum import RouterEnum
 
 def main():
     load_dotenv()
-    
     # 取得 URL query 參數
     query_params = st.query_params    
     current_page = query_params.get("page", RouterEnum.home.name)
@@ -22,19 +21,16 @@ def main():
     selectPage = selectPageEnum.name
     
     # 更新 URL
-    if selectPage != current_page:
-        st.query_params = {"page": selectPage}  # ✅ 新版寫法
-
+    # if selectPage != current_page:
+    #     st.query_params = {"page": selectPage}  # ✅ 新版寫法
     # 根據 page 執行對應函式
     if selectPage == RouterEnum.home.name:
         home.homePage()
     elif selectPage == RouterEnum.analyze.name:
-        dashboard.dashboardPage()
+        analyze.analyzePage()
     elif selectPage == RouterEnum.setting.name:
         setting.settingPage()
-    st.navigation()
     
-
 
 if __name__ == "__main__":
     main()

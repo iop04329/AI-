@@ -10,8 +10,7 @@ class NewsItem(BaseModel):
     文章連結: HttpUrl
 
 class StockAnalysis(BaseModel):
-    AI分析結果: str
-    分析總結: str
+    AI分析總結: str
     媒體情緒觀察: str
     短期分析: str
     中長期分析: str
